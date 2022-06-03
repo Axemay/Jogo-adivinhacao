@@ -1,0 +1,85 @@
+body {
+  font-family: "Roboto Mono", monospace;
+  min-height: 600px;
+  background-image: url(assets/images/ball.jpeg);
+
+
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  text-shadow: 3px 3px 3px  white;
+  
+}
+
+
+
+.container {
+  text-align: center;
+  padding: 20px;
+  height: 100vh;
+}
+
+.page-title {
+  color: #6567d8;;
+  margin: 0 0 5px;
+}
+
+span {
+  background-color: #000000;
+  text-shadow: none;
+  animation-name: cores;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes cores {
+  0%   {background-color: #40122c;}
+  25%  {background-color:#d8f171;}
+  50%  {background-color:#d8f171;}
+  100% {background-color: #59baa9;}
+}
+
+.page-subtitle {
+  font-weight: bolder;
+  font-size: 30px;
+  color: #6567d8;
+  margin-top: 16px;
+
+  
+}
+
+
+
+.page-logo {
+  width: 200px;
+}
+
+
+
+@media (max-height: 500px) {
+  body {
+    min-height: 800px;
+  }
+}
+
+input {
+  margin: 4px;
+  padding: 6px;
+  border-radius: 5px;
+}
+
+button {
+  margin-top: 12px;
+  padding: 4px 8px;
+  border-radius: 10px;
+  background: #6567d8;;;
+}
+
+.resultado {
+  lign-items: center;
+  color: #6567d8;;
+  text-align: center;
+  margin-top: 16px;
+  text-shadow: 3px 2px 3px  white;
+  
+}
