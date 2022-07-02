@@ -1,85 +1,103 @@
 body {
-  font-family: "Roboto Mono", monospace;
-  min-height: 600px;
-  background-image: url(assets/images/ball.jpeg);
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+}
 
+.container{
 
-  background-size: cover;
+  background: #18191A;;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  align-items: center;
+}
+
+.wrapper{
+ 
+  background-image: url(assets/images/fundo.svg);
   background-position: center bottom;
   background-repeat: no-repeat;
-  text-shadow: 3px 3px 3px  white;
-  
+  background-color: #fff;
+  height: 467px;
+  width: 970px;
 }
 
-
-
-.container {
-  text-align: center;
+.box {
+  width: 500px;
+  margin: 0 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  text-align: left;
   padding: 20px;
-  height: 100vh;
 }
 
-.page-title {
-  color: #6567d8;;
-  margin: 0 0 5px;
-}
-
-span {
-  background-color: #000000;
-  text-shadow: none;
-  animation-name: cores;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
-}
-
-@keyframes cores {
-  0%   {background-color: #40122c;}
-  25%  {background-color:#d8f171;}
-  50%  {background-color:#d8f171;}
-  100% {background-color: #59baa9;}
-}
-
-.page-subtitle {
-  font-weight: bolder;
-  font-size: 30px;
-  color: #6567d8;
-  margin-top: 16px;
-
+.container .wrapper .box .page-title{
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 20.33px;
   
 }
 
-
-
-.page-logo {
-  width: 200px;
+.container .wrapper .box .page-title span{
+  color: #FFB400;
 }
 
 
+.container .wrapper .box .page-text{
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
 
-@media (max-height: 500px) {
-  body {
-    min-height: 800px;
-  }
 }
 
-input {
-  margin: 4px;
-  padding: 6px;
+#valor{
+  width: 316px;
+  height: 40px;
+  background: #F0F0F6;
+  border: transparent;
   border-radius: 5px;
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+  margin-bottom: 24px;
+  font-size: 18px;
+
 }
 
-button {
-  margin-top: 12px;
-  padding: 4px 8px;
-  border-radius: 10px;
-  background: #6567d8;;;
+#valor:focus, select:focus{
+  background: #d3d3df;
+}
+
+.button-action{
+  height: 51px;
+  width: fit-content;
+  font-weight: 500;
+  padding: 16px 32px;
+  font-size: 16px;
+  background: #FFB400;
+  border: transparent;
+  border-radius: 5px;
+  margin-right: 26px;
+  
 }
 
 .resultado {
-  lign-items: center;
-  color: #6567d8;;
-  text-align: center;
+  font-weight: 500;;
+  color: #111111;
+  font-size: 22px;
   margin-top: 16px;
-  text-shadow: 3px 2px 3px  white;
-  
+
+}
+
+
+.try-colors{
+  color: #eca603;
+}
+
+
+.try-colors.-blue{
+
+  color: #0047FF;
 }

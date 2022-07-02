@@ -35,20 +35,16 @@ function Chutar() {
   {
     if (tentativas >= 1 && numeroSecreto > chute) 
     {
-      elementoResultado.innerHTML ="Você errou! O número é maior que " + chute + ". Você ainda tem " + tentativas + " chances.";
+      elementoResultado.innerHTML = `O número é maior que ${chute}.<br>Você ainda tem <span class="try-colors -blue">${tentativas}</span> chances.`
 
     } else if (tentativas >= 1 && numeroSecreto < chute) 
     {
       elementoResultado.innerHTML =
-        "Você errou! O número é menor que " +
-        chute +
-        ". Você ainda tem " +
-        tentativas +
-        " chances.";
+        `O número é menor que ${chute}.<br>Você ainda tem <span class="try-colors -blue">${tentativas}</span> chances.`
     } else if (tentativas < 1)
     {
       elementoResultado.innerHTML =
-        "Você errou! Você não tem mais chances. O número é " + numeroSecreto;
+        `Você não tem mais chances. O número é <span class="try-colors">${numeroSecreto}</span>.`
         document.getElementById("btnChutar").disabled = true;
         
     }
@@ -61,5 +57,6 @@ function JogarDeNovo(){
   document.getElementById("btnChutar").disabled = false;
   Sortear();
   tentativas = 3;
-  elementoResultado.innerHTML = "Novo jogo! Você tem " + tentativas + " chances."
+elementoResultado.innerHTML =  `Novo jogo! Você tem <span class="try-colors -blue">${tentativas}</span> chances.`
+// elementoResultado.innerHTML =  "Novo jogo! Você tem " + tentativas + " chances."
 }
