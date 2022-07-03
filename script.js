@@ -14,7 +14,7 @@ function Chutar() {
   var chute = parseInt(document.getElementById("valor").value);
   Verificar(chute);
   
-  console.log(numeroSecreto);
+  // console.log(numeroSecreto);
 }
 
 
