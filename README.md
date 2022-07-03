@@ -1,8 +1,9 @@
 <h1><a href="https://axemay.github.io/Jogo-adivinhacao/">Jogo de adivinhação</a></h1>
 
-<p>Projeto desenvolvido durante a imersãoDev Alura.</p>
+<p>Projeto desenvolvido durante a imersãoDev Alura com HTML, CSS e Javascript.</p>
 <p>O projeto consiste em um jogo de adivinhação de números, onde o jogador terá 3 tentativas para acertar o número sorteado pelo computador.</p>
 <p>A qualquer momento, o jogador pode optar por iniciar um novo jogo.</p> 
+
 
 <p>Obs.: O layout foi atualizado fora do período da imersão.</p>
 
