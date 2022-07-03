@@ -11,18 +11,17 @@ numeroSecreto = parseInt(Math.random() * 11);
 Sortear(numeroSecreto);
 
 function Chutar() {
-  
   var chute = parseInt(document.getElementById("valor").value);
   Verificar(chute);
+  
   console.log(numeroSecreto);
 }
 
 
 
   
-  function Verificar(chute)
-  {
-
+  function Verificar(chute){
+  
   if (chute == numeroSecreto && tentativas >= 1) 
   {
     elementoResultado.innerHTML = "Você acertou!";
@@ -32,8 +31,9 @@ function Chutar() {
   {
     elementoResultado.innerHTML = "Você deve digitar um número entre 0 e 10.";
   } else 
-  {
     tentativas--;
+  {
+    
     if (tentativas >= 1 && numeroSecreto > chute) 
     {
       elementoResultado.innerHTML = `O número é maior que ${chute}.<br>Você ainda tem <span class="try-colors -blue">${tentativas}</span> chances.`
@@ -42,13 +42,14 @@ function Chutar() {
     {
       elementoResultado.innerHTML =
         `O número é menor que ${chute}.<br>Você ainda tem <span class="try-colors -blue">${tentativas}</span> chances.`
-    } else if (tentativas < 1)
+    } else if (tentativas == 0)
     {
       elementoResultado.innerHTML =
         `Você não tem mais chances. O número é <span class="try-colors">${numeroSecreto}</span>.`
         document.getElementById("btnChutar").disabled = true;
         
     }
+    
   }
 }
 
