@@ -70,7 +70,12 @@ body {
   background: #d3d3df;
 }
 
-.button-action{
+.container .box .button-box{
+  width: fit-content;
+
+}
+
+.container .box .button-box .button-action{
   height: 51px;
   width: fit-content;
   font-weight: 500;
@@ -101,3 +106,60 @@ body {
 
   color: #0047FF;
 }
+
+
+
+
+
+
+@media only screen and (max-width: 770px) {
+
+.container{
+  
+  flex-wrap: wrap;
+  
+}
+
+  .wrapper{
+    width: 100%;
+    background-image:none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    
+  }
+
+  .box {
+    width: 90%;
+    padding: 15px;
+    margin: 0;
+  }
+  
+  .container .wrapper .box .page-title{
+    font-size: 28px;
+    line-height: 20.33px;
+   
+  }
+
+  .container .wrapper .box .page-text, .resultado{
+    font-size: 18px;
+    padding: 5px;
+  }
+
+  .container .box .button-box .button-action{
+    height: 51px;
+    width: fit-content;
+    font-weight: 500;
+    padding: 16px 18px;
+    font-size: 16px;
+    background: #FFB400;
+    border: transparent;
+    border-radius: 5px;
+    margin-right: 26px;
+    
+  }
+
+}
+
+
+
