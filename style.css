@@ -114,11 +114,6 @@ body {
 
 @media only screen and (max-width: 770px) {
 
-.container{
-  
-  flex-wrap: wrap;
-  
-}
 
   .wrapper{
     width: 100%;
@@ -147,16 +142,7 @@ body {
   }
 
   .container .box .button-box .button-action{
-    height: 51px;
-    width: fit-content;
-    font-weight: 500;
-    padding: 16px 18px;
-    font-size: 16px;
-    background: #FFB400;
-    border: transparent;
-    border-radius: 5px;
-    margin-right: 26px;
-    
+    padding: 16px 18px;   
   }
 
 }
