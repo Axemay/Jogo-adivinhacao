@@ -101,3 +101,38 @@ body {
 
   color: #0047FF;
 }
+
+@media only screen and (max-width: 770px) {
+
+
+  .wrapper{
+    width: 100%;
+    background-image:none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    
+  }
+
+  .box {
+    width: 90%;
+    padding: 15px;
+    margin: 0;
+  }
+  
+  .container .wrapper .box .page-title{
+    font-size: 28px;
+    line-height: 20.33px;
+   
+  }
+
+  .container .wrapper .box .page-text, .resultado{
+    font-size: 18px;
+    padding: 5px;
+  }
+
+  .container .box .button-box .button-action{
+    padding: 16px 18px;   
+  }
+
+}
